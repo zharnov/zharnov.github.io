@@ -8,27 +8,27 @@
 	<link rel="shortcut icon" href="/static/images/favicon.ico">
 	<link rel="stylesheet" href="/static/css/style.css">
 
-	
-		<title>Portfolio</title>
-	
+
+		<title>Test</title>
+
   </head>
 
 <body>
-	
+
 <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 
 <script type="text/javascript" charset="utf-8">
 	$(document).ready(function() {
-		
+
 		// Add the missing url to the text
 		$("#url").text(window.location.pathname);
-		
+
 		// Fix the css locations dynamically
 		$("head link").each(function() {
 			for (var i=0; i<window.location.pathname.split(/\//g).length-2; i++)
 				$(this).attr("href", "../" + $(this).attr("href"));
 		});
-		
+
 	})
 </script>
 
@@ -37,9 +37,9 @@
 </p>
 
 
-	
+
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="/static/js/main.js"></script>
-	
+
 </body>
 </html>
