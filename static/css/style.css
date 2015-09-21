@@ -71,7 +71,7 @@ hr {
 }
 
 #header {
-	border-bottom: 1px solid #eee;
+	/*border-bottom: 1px solid #eee;*/
 }
 
 img {
@@ -80,7 +80,7 @@ img {
 
 #thumbnails {
 	margin: 0 auto;
-	margin-top: 60px;
+	/*margin-top: 60px;*/
 	text-align: center;
 }
 
@@ -117,7 +117,7 @@ img {
 	width: 100%;
 	height: auto;
 
-	margin-top: 8%;
+	margin-top: 50px;
 }
 
 #thumbnails a span {
@@ -192,16 +192,22 @@ li	{ list-style-type: circle; list-style-position: inside; }
 }
 
 
+
 h1 {
 	display: inline-block;
 	line-height: 100%;
 	color: #222;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 19px;
 	margin: 0;
 	padding-bottom: 20px;
 }
 
+#header h1 {
+	font-weight: 400;
+	font-size: 25px;
+
+}
 
 h2 {
 	display: inline-block;
@@ -216,14 +222,14 @@ h2 {
 
 h3 {
 	font-size: 13px;
-	font-weight: bold;
-	color: #ccc;
+	font-weight: 600;
+	color: #222;
 	margin-bottom: 6px;
 }
 
 h4 {
 	font-size: 13px;
-	font-weight: bold;
+	font-weight: 400;
 	color: #666;
 	margin-bottom: 6px;
 }
@@ -238,7 +244,9 @@ p.small {
 
 /* Post Page */
 #header {
-	border-bottom: 1px solid #eee;
+	text-align: center;
+
+	/*border-bottom: 1px solid #eee;*/
 	margin-bottom: 20px;
 }
 
@@ -348,6 +356,8 @@ p.small {
 	#header { margin-bottom: 40px; }
 	h1 { font-size: 17px; }
 	#footer { margin-top: 40px; padding-bottom: 20px; }
+	#thumbnails a img { margin-top: 0px;}
+	}
 }
 
 @media screen and (max-width:440px) {
@@ -359,7 +369,7 @@ p.small {
 		display: inline-block;
 		float: none;
 	}
-
+	#thumbnails a img { margin-top: 10px;}
 	a#docs { display: none; }
 	#thumbnails a:first-child { margin-top: 0; }
 	#header { text-align: center; margin-bottom: 0; }
