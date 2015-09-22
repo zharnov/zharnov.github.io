@@ -104,11 +104,11 @@ img {
 }*/
 
 #thumbnails a,#thumbnails a img,#thumbnails a span {
-	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-ms-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
-	transition: all 0.2s ease;
+	-webkit-transition: all 03s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 #thumbnails a img {
@@ -116,7 +116,6 @@ img {
 	background: #fff;
 	width: 100%;
 	height: auto;
-
 	margin-top: 50px;
 }
 
@@ -150,15 +149,6 @@ img {
 
 #footer p {
 	float: left;
-}
-
-/* Made with Cactus Badge */
-#badge {
-	position: absolute;
-	bottom: 8px;
-	right: 8px;
-	height: 48px;
-	width: 48px;
 }
 
 /* Type */
@@ -201,13 +191,22 @@ h1 {
 	font-size: 19px;
 	margin: 0;
 	padding-bottom: 20px;
+
 }
 
 #header h1 {
+	color: #222;
 	font-weight: 400;
 	font-size: 25px;
-
+	border-bottom: 2px solid rgba(34, 34, 34, 0.0);
 }
+
+#header a h1 {
+	padding-bottom: 10px;
+	border-bottom: 2px solid rgba(34, 34, 34, 0.1);
+}
+
+
 
 h2 {
 	display: inline-block;
@@ -309,16 +308,16 @@ p.small {
 	border-top: 1px solid #eee;
 	text-align: center;
 	padding-top: 20px;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 }
 
 #post-nav span {
-	-webkit-transition: all 0.1s linear;
-	-moz-transition: all 0.1s linear;
-	-ms-transition: all 0.1s linear;
-	-o-transition: all 0.1s linear;
-	transition: all 0.1s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
 	position: relative;
 }
 
@@ -330,9 +329,16 @@ p.small {
 	float: right;
 }
 
+#post-nav span.about {
+	float: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans&text=←→);
+
 #post-nav span .arrow {
 	position: relative;
 	padding: 1px;
+	font-family: "Fira Sans", sans-serif;
 }
 
 #post-nav span.prev:hover .arrow {
@@ -353,7 +359,7 @@ p.small {
 
 @media screen and (max-width: 540px) {
 	#wrapper { padding: 20px 40px; }
-	#header { margin-bottom: 40px; }
+	#header { margin-bottom: 15px; }
 	h1 { font-size: 17px; }
 	#footer { margin-top: 40px; padding-bottom: 20px; }
 	#thumbnails a img { margin-top: 0px;}
