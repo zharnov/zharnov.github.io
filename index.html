@@ -9,6 +9,12 @@
 	<link rel="stylesheet" href="/static/fonts/fonts.css">
 	<link rel="stylesheet" href="/static/css/style.css">
 
+	<!-- Photoswipe -->
+	<link rel="stylesheet" href="/static/photoswipe/photoswipe.css">
+	<link rel="stylesheet" href="/static/photoswipe/default-skin/default-skin.css">
+	<script src="/static/photoswipe/photoswipe.min.js"></script>
+	<script src="/static/photoswipe/photoswipe-ui-default.js"></script>
+
 	
 		<title>Пётр Жарнов</title>
 	
@@ -20,37 +26,68 @@
 	<section id="wrapper">
 		<header id="header">
 			<h1>Пётр Жарнов</h1>
+			
+
+			<nav id="post-nav">
+				<span class="about active">
+					<a href='/'>
+						Работы
+					</a>
+				</span>
+				<span class="about">
+					<a href='/about.html'>
+						обо мне
+					</a>
+				</span>
+			</nav>
+
+			
 		</header>
+
+
+
+		<article class="post">
+			<section class="post-body">
+				<p>Displays images in a grid, with individual pages optionally describing the image in detail, or displaying more images.
+					Images have a max-width of 400 pixels by default.</p>
+
+			</section>
+		</article>
+
+
+
 		<section id="thumbnails" class="clearfix">
+
+
 			
-				<a href='/posts/project-six.html'>
-					<img class="2x" width="400" height="100" src="/static/images/image-thumbnail.jpg"/>
-					<span>Название проекта шесть</span>
+				<a href='/project/photo.html'>
+					<img class="2x" src="/static/images/instaphoto/inst-cover.jpg"/>
+					<!-- <span>Инста</span> -->
 				</a>
 			
-				<a href='/posts/project-five.html'>
-					<img class="2x" width="400" height="100" src="/static/images/image-thumbnail.jpg"/>
-					<span>Project Five</span>
+				<a href='/project/wallarm.html'>
+					<img class="2x" src="/static/images/wallarm/wallarm-cover.jpg"/>
+					<!-- <span>Wallarm</span> -->
 				</a>
 			
-				<a href='/posts/project-four.html'>
-					<img class="2x" width="400" height="100" src="/static/images/image-thumbnail.jpg"/>
-					<span>Project Four</span>
+				<a href='/project/project-six.html'>
+					<img class="2x" src="/static/images/img-cover.jpg"/>
+					<!-- <span>Название проекта шесть</span> -->
 				</a>
 			
-				<a href='/posts/project-three.html'>
-					<img class="2x" width="400" height="100" src="/static/images/image-thumbnail.jpg"/>
-					<span>Project Three</span>
+				<a href='/project/project-five.html'>
+					<img class="2x" src="/static/images/image-thumbnail.jpg"/>
+					<!-- <span>Дизайн промо сайта для детского благотворительного фонда «Жизнь»</span> -->
 				</a>
 			
-				<a href='/posts/project-two.html'>
-					<img class="2x" width="400" height="100" src="/static/images/image-thumbnail.jpg"/>
-					<span>Project Two</span>
+				<a href='/project/project-three.html'>
+					<img class="2x" src="/static/images/ruko-cover.jpg"/>
+					<!-- <span>Project Three</span> -->
 				</a>
 			
-				<a href='/posts/project-one.html'>
-					<img class="2x" width="400" height="100" src="/static/images/image-thumbnail.jpg"/>
-					<span>Project One</span>
+				<a href='/project/project-two.html'>
+					<img class="2x" src="/static/images/acco-cover.jpg"/>
+					<!-- <span>Project Two</span> -->
 				</a>
 			
 		</section>
@@ -67,6 +104,54 @@
 	
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="/static/js/main.js"></script>
+		<script src="/static/js/photoswipe.js"></script>
 	
 </body>
+
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+	    <div class="pswp__bg"></div>
+
+			<div class="pswp__scroll-wrap">
+	        <div class="pswp__container">
+	            <div class="pswp__item"></div>
+	            <div class="pswp__item"></div>
+	            <div class="pswp__item"></div>
+	        </div>
+
+					<div class="pswp__ui pswp__ui--hidden">
+	            <div class="pswp__top-bar">
+	                <div class="pswp__counter"></div>
+	                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+	                <button class="pswp__button pswp__button--share" title="Share"></button>
+	                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+	                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+	                <div class="pswp__preloader">
+	                    <div class="pswp__preloader__icn">
+	                      <div class="pswp__preloader__cut">
+	                        <div class="pswp__preloader__donut"></div>
+	                      </div>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+	                <div class="pswp__share-tooltip"></div>
+	            </div>
+
+	            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+	            </button>
+
+	            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+	            </button>
+
+	            <div class="pswp__caption">
+	                <div class="pswp__caption__center"></div>
+	            </div>
+
+	        </div>
+	    </div>
+	</div>
+
 </html>
