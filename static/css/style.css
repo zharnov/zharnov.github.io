@@ -56,12 +56,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 
 
-/*.post img+img {
-	margin-top: -20px;
-}*/
-
-
-
 /* Base */
 html,body {
 	min-height: 100%;
@@ -402,36 +396,30 @@ p.small {
 }
 
 @media screen and (max-width: 540px) {
-	#wrapper { padding: 20px 40px; }
+	#wrapper { padding: 20px 0px; }
+
 	#header { margin-bottom: 15px; }
 	h1 { font-size: 17px; }
-	#footer { margin-top: 40px; padding-bottom: 20px; }
-	#thumbnails a img { margin-top: 0px;}
+	#footer { margin-top: 40px; padding: 20px 20px; }
+	.post-body p, .post-body h1,.post-body h2,.post-body h3,  figcaption { padding: 0px 40px; }
+	.screen { border-radius: 0px; border-left: 0px solid rgba(34, 34, 34, 0.1); border-right: 0px solid rgba(34, 34, 34, 0.1);}
+	#thumbnails a img { margin-top: 30px;}
 	#half a { width: 48%; 	}
 	#third a { 	width: 31%; 	}
 	#quarter a { width: 48%;	}
+	.post-body h1,.post-body h2,.post-body h3 {padding-bottom: 20px; padding-top: 10px;}
+	.post img { margin: 10px auto; padding-bottom: 20px;}
+
+
 	}
 }
 
 @media screen and (max-width:440px) {
-	#thumbnails a:nth-child(n) {
-		width: 100%;
-		max-width: 300px;
-		margin: 0 auto;
-		margin-top: 20px;
-		display: inline-block;
-		float: none;
-	}
-	#thumbnails a img { margin-top: 10px;}
-	a#docs { display: none; }
-	#thumbnails a:first-child { margin-top: 0; }
+
 	#header { text-align: center; margin-bottom: 0; }
-	#wrapper { padding: 20px 20px 40px 20px; }
 	.post { margin-bottom: 40px; }
 	#footer { text-align: center; padding-bottom: 15px; }
 
-	#half a { width: 48%; 	}
-	#third a { 	width: 31%; 	}
-	#quarter a { width: 48%;	}
+
 	}
 }
