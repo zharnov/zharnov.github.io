@@ -30,7 +30,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 
-#half a, #third a, #quarter a {
+#half a, #third a, #quarter a, #half span, #third span, #quarter span {
 	margin: 0 auto;
 	margin-top: 20px;
 	text-align: center;
@@ -41,16 +41,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	margin-top: 0px;
 }
 
-#half a {
+#half a, #half span, #quarter span {
 	width: 48%;
 
 }
 
-#third a {
+#third a, #third span {
 	width: 31%;
 }
 
-#quarter a {
+#quarter a, #quarter span {
 	width: 23%;
 }
 
@@ -107,8 +107,8 @@ img {
 }
 
 #thumbnails a {
-/*	width: 29%;
-	float: left; */
+	/*width: 49%;
+	float: left;*/
 	position: relative;
 }
 
@@ -153,7 +153,7 @@ img {
 }
 
 #thumbnails a:hover img{
-	opacity: .5;
+	opacity: .75;
 }
 
 #thumbnails a:hover span {
@@ -163,7 +163,7 @@ img {
 }
 
 #footer {
-	box-shadow: inset 0 1px 0 #eee;
+	/*box-shadow: inset 0 1px 0 #eee;*/
 	padding: 40px 0 0 0;
 	margin-top: 100px;
 	position: relative;
@@ -207,7 +207,7 @@ li	{ list-style-type: circle; list-style-position: inside; }
 
 h1 {
 	display: inline-block;
-	line-height: 100%;
+	line-height: 140%;
 	color: #222;
 	font-weight: 500;
 	font-size: 19px;
@@ -221,7 +221,7 @@ h1 {
 	color: #222;
 	font-weight: 600;
 	font-size: 35px;
-	line-height: 120%;
+	line-height: 125%;
 }
 
 #header a h1 {
@@ -233,7 +233,7 @@ h1 {
 
 h2 {
 	display: inline-block;
-	line-height: 100%;
+	line-height: 125%;
 	color: #222;
 	font-weight: 500;
 	font-size: 17px;
@@ -278,38 +278,6 @@ p.small {
 	margin-top: 40px;
 }
 
-#post-meta {
-	font-size: 13px;
-	font-weight: 600;
-	line-height: 1.4;
-	margin-bottom: 40px;
-	padding-top: 40px;
-	border-top: 1px solid #eee;
-	color: #444;
-}
-
-#post-meta div {
-	display: inline-block;
-}
-
-#post-meta div span {
-	color: #aaa;
-	font-weight:500;
-	display: block;
-	margin-bottom: 2px;
-}
-
-#post-meta div.date {
-	float: right;
-	text-align: right;
-	position: relative;
-	top: 1px;
-	/*font: 300 20px/1.8 "Helvetica Neue",helvetica,Arial,sans-serif;*/
-	font-size: 20px;
-	font-weight:300;
-	color: #aaa;
-}
-
 
 /* Post Navigation */
 #post-nav {
@@ -322,6 +290,15 @@ p.small {
 
 #post-nav span a {
 	color: #222;
+	padding: 10px;
+}
+
+#post-nav span.prev  a {
+	padding-left: 0px;
+}
+
+#post-nav span.next  a {
+	padding-right: 0px;
 }
 
 #post-nav span {
@@ -335,7 +312,7 @@ p.small {
 
 #post-nav span.prev {
 	float: left;
-		opacity: .75;
+	opacity: .75;
 }
 
 #post-nav span.next {
@@ -357,16 +334,13 @@ p.small {
 }
 
 #post-nav span.active {
-
 	opacity: 1;
-
 }
 
 #post-nav span .arrow {
 	position: relative;
 	padding: 1px;
 }
-
 
 
 #post-nav span.prev:hover {
@@ -381,8 +355,39 @@ p.small {
 	opacity: .75;
 }
 
+.photo {
+	text-align: center;
+	padding: 20px;
+	display: block;
+}
+
+
+.photo img {
+	max-width: 130px;
+	/*margin: 0 0;*/
+}
+
+.social {
+	text-align: center;
+}
+
+.social a{
+	padding: 20px;
+	font-size: 38px;
+}
+
+
+
 .rounded {
 	border-radius: 5px;
+}
+
+.round {
+	border-radius: 500px;
+}
+
+.semibold {
+		font-weight: 500;
 }
 
 .shadowed {
@@ -395,20 +400,21 @@ p.small {
 	border: 1px solid rgba(34, 34, 34, 0.1);
 }
 
+
 @media screen and (max-width: 540px) {
-	#wrapper { padding: 20px 0px; }
+	#wrapper { padding: 20px 30px; }
 
 	#header { margin-bottom: 15px; }
 	h1 { font-size: 17px; }
-	#footer { margin-top: 40px; padding: 20px 20px; }
-	.post-body p, .post-body h1,.post-body h2,.post-body h3,  figcaption { padding: 0px 40px; }
-	.screen { border-radius: 0px; border-left: 0px solid rgba(34, 34, 34, 0.1); border-right: 0px solid rgba(34, 34, 34, 0.1);}
+	#footer { margin-top: 40px; padding: 20px 0px; }
+
+
 	#thumbnails a img { margin-top: 30px;}
 	#half a { width: 48%; 	}
 	#third a { 	width: 31%; 	}
 	#quarter a { width: 48%;	}
-	.post-body h1,.post-body h2,.post-body h3 {padding-bottom: 20px; padding-top: 10px;}
-	.post img { margin: 10px auto; padding-bottom: 20px;}
+
+	.post img { margin: 10px auto; margin-bottom: 20px;}
 
 
 	}
