@@ -127,6 +127,10 @@ img {
     -ms-interpolation-mode: bicubic;
 }
 
+
+
+
+
 /*                                       Start my CSS                         */
 
 .about, .projects, .contacts {
@@ -161,19 +165,26 @@ p:not(:last-child) {
 a:not(.project-link) {
     color: #222;
 
-    -webkit-transition: all 0.5s ease;
-  	-moz-transition: all 0.5s ease;
-  	-ms-transition: all 0.5s ease;
-  	-o-transition: all 0.5s ease;
-  	transition: all 0.5s ease;
+    -webkit-transition: all 250ms ease-out;
+  	-moz-transition: all 250ms ease-out;
+  	-ms-transition: all 250ms ease-out;
+  	-o-transition: all 250ms ease-out;
+  	transition: all 250ms ease-out;
 
 }
 
-a:not(.project-link):hover  {
-    /*color: #4e4e4e;*/
+a:hover, a.underlined:hover {
+    color: #29314F;
+}
+
+.next-project a:hover, a.nav-link:hover {
     opacity: 0.5;
 }
 
+
+a.project-link:hover, .social a:hover, figure a:hover {
+    opacity: 1;
+}
 
 html {
     font-size: 62.5%;
@@ -282,13 +293,6 @@ main {
 
 .menu-links span.active a {
     color: #222;
-
-      /*font-family: 'EB Garamond', serif;
-      font-size: calc(14px + 0.8vw);
-      letter-spacing: 0px;
-      font-weight: 400;
-      text-transform: none;*/
-
 }
 
 @media (max-width: 700px) {
@@ -550,15 +554,6 @@ figcaption.small p {
     right: 0;
     bottom: 0;
     left: 0;
-    /*-webkit-transition: opacity 150ms ease-out;
-            transition: opacity 150ms ease-out;*/
-
-            /*-webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -ms-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            transition: all 0.5s ease;*/
-
 
     background: #fff;
     opacity: 0;
@@ -576,6 +571,19 @@ figcaption.small p {
 .social a {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+#svg #icon, #svg #circle {
+opacity: 0;
+-webkit-transition: opacity 250ms ease-out;
+        transition: opacity 250ms ease-out;
+}
+
+
+#svg:hover #icon, #svg:hover #circle {
+opacity: 1;
+-webkit-transition: opacity 500ms ease-out;
+        transition: opacity 500ms ease-out;
 }
 
 .social {
@@ -600,10 +608,6 @@ figcaption.small p {
 }
 
 
-figure a:hover {
-    opacity: 1 !important;
-}
-
 .grayscale {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -616,11 +620,12 @@ figure a:hover {
 
 a.underlined {
 
- /*border-bottom:1px solid #d7d7d7;*/
+  border-bottom:1px solid #d7d7d7;
 
-  text-decoration: underline;
-  
+  /*-moz-text-decoration: underline;
+  -webkit-text-decoration: underline;
+
   -moz-text-decoration-color: #d7d7d7;
   -webkit-text-decoration-color: #d7d7d7;
-  text-decoration-color: #d7d7d7;
+  text-decoration-color: #d7d7d7;*/
 }
