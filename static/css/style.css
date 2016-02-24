@@ -562,12 +562,12 @@ figcaption.small p {
     bottom: 0;
     left: 0;
 
-    -webkit-transition: opacity 150ms ease-out;
-            transition: opacity 150ms ease-out;
+    -webkit-transition: opacity 500ms ease-out;
+            transition: opacity 500ms ease-out;
 
-    background: #fff;
+    background: #f2f2f2;
     opacity: 0;
-    color: #fff;
+    color: #f2f2f2;
     font-size: calc(16px + 0.6vw);
     line-height: 1.5em;
 }
