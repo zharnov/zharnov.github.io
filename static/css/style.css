@@ -350,7 +350,7 @@ main {
 .contacts  {
     font-family: 'EB Garamond', Georgia, serif;
     padding-top: 30vh;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 }
 
 .next-project  {
@@ -422,7 +422,7 @@ footer {
     }
 
     footer {
-        padding-top: 40px;
+        padding-top: 30px;
         padding-bottom: 40px;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -519,6 +519,15 @@ figcaption.small p {
 }
 
 
+@media (max-width: 700px) {
+    figcaption p, figcaption.small p {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+}
+
+
+
 .photo {
   max-width: 250px;
 }
@@ -530,8 +539,6 @@ figcaption.small p {
 .project-link {
     display: block;
     position: relative;
-
-
 }
 
 .project-link:after {
@@ -555,11 +562,18 @@ figcaption.small p {
     bottom: 0;
     left: 0;
 
+    -webkit-transition: opacity 150ms ease-out;
+            transition: opacity 150ms ease-out;
+
     background: #fff;
     opacity: 0;
     color: #fff;
     font-size: calc(16px + 0.6vw);
     line-height: 1.5em;
+}
+
+.project-link:hover:after, .project-link:focus:after {
+    opacity: 0.2;
 }
 
 @media (max-width: 700px) {
@@ -593,20 +607,22 @@ opacity: 1;
 
 .inner {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
-@media (max-width: 700px) {
-    .social {
-        padding-top: 20px;
-    }
-}
 
 .social {
     padding-top: 100px;
     padding-bottom: 20px;
 }
 
+
+@media (max-width: 700px) {
+    .social {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}
 
 .grayscale {
   -webkit-filter: grayscale(100%);
