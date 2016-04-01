@@ -562,18 +562,22 @@ figcaption.small p {
     bottom: 0;
     left: 0;
 
-    -webkit-transition: opacity 500ms ease-out;
-            transition: opacity 500ms ease-out;
+    -webkit-transition: opacity 250ms ease-out;
+            transition: opacity 250ms ease-out;
 
     background: #f2f2f2;
     opacity: 0;
-    color: #f2f2f2;
+    color: #222;
     font-size: calc(16px + 0.6vw);
-    line-height: 1.5em;
+
+    font-weight: 600;
+    line-height: 1.2em;
+
+    padding: 50px;
 }
 
 .project-link:hover:after, .project-link:focus:after {
-    opacity: 0.2;
+    opacity: 0.8;
 }
 
 @media (max-width: 700px) {
@@ -596,8 +600,8 @@ opacity: 0;
 
 #svg:hover #icon, #svg:hover #circle {
 opacity: 1;
--webkit-transition: opacity 500ms ease-out;
-        transition: opacity 500ms ease-out;
+-webkit-transition: opacity 250ms ease-out;
+        transition: opacity 250ms ease-out;
 }
 
 .social {
@@ -627,6 +631,17 @@ opacity: 1;
 .grayscale {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+
+          -webkit-transition: all 250ms ease-out;
+                  transition: all 250ms ease-out;
+
+}
+
+.grayscale:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+
+
 }
 
 .hidden {
