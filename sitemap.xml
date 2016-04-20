@@ -71,6 +71,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/ux.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/wallarm.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
