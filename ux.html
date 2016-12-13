@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description"           content="Пётр Жарнов — графический дизайнер и арт-директор из Москвы. Я занимаюсь созданием дизайна сайтов, проектами по фирменному стилю и дизайном мобильных приложений.">
+    <meta name="description"           content="Пётр Жарнов — графический дизайнер из Москвы. Я занимаюсь созданием дизайна сайтов, проектами по фирменному стилю и дизайном мобильных приложений.">
     <meta name="viewport"              content="width=device-width,initial-scale=1">
 
 
@@ -28,10 +28,9 @@
     <meta name="twitter:image:src"   content="http://zharnov.ru/static/portfolio/ux/cover.jpg" >
 
     <link rel="shortcut icon" href="static/favicons/favicon.png">
-
+    <link rel="shortcut icon" href="static/favicons/favicon.svg">
+    <link rel="mask-icon" href="static/favicons/zharnov-ru_icon.svg" color="#222222">
     <link rel="stylesheet" href="static/css/fonts.css"/>
-    <link href='https://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" href="static/css/style.css"/>
 
     <!-- Photoswipe -->
@@ -40,6 +39,9 @@
 
 </head>
 <body>
+
+
+
 	
 <menu class="">
   <section class="inner-navigation">
@@ -52,18 +54,19 @@
 </menu>
 
 
+    <main class="content">
 
-  <div class="projects my-gallery narrow">
 
 
-    <figure class="wide">
-      <a href="/static/portfolio/ux/cover.jpg" data-size="1600x1000">
-      <img src="/static/portfolio/ux/cover.jpg" class="hidden"></a>
-          <figcaption>
-          <p>Подборка UX решений, прототипов и интерфейсов, нарисованных для различных клиентов и сервисов.</p>
-          </figcaption>
-    </figure>
+<section class="projects narrow">
+  <figure class="wide">
+    <figcaption>
+      <p>Под­бор­ка UX ре­ше­ний, про­то­ти­пов и ин­тер­фей­сов, на­ри­со­ван­ных для раз­лич­ных кли­ен­тов и сер­ви­сов.</p>
+    </figcaption>
+  </figure>
+</section>
 
+  <div class="projects my-gallery">
 
     <figure class="wide">
           <a href="/static/portfolio/ux/01.jpg" data-size="1600x1000">
@@ -75,12 +78,12 @@
           <img src="/static/portfolio/ux/02.jpg"></a>
     </figure>
 
-    <figure class="">
+    <figure class="half">
           <a href="/static/portfolio/ux/g01.jpg" data-size="1600x1000">
           <img src="/static/portfolio/ux/g01.jpg"></a>
     </figure>
 
-    <figure class="">
+    <figure class="half">
           <a href="/static/portfolio/ux/g02.jpg" data-size="1600x1000">
           <img src="/static/portfolio/ux/g02.jpg"></a>
     </figure>
@@ -121,8 +124,10 @@
 
 
 
-<section class="next-project">
-<a href="rukodelov.html" alt="Next">
+</main>
+
+<section class="next-project next-footer" style= "background-image: url('/static/portfolio/taubook/cover.jpg');">
+<a href="taubook.html" alt="Next">
   <svg width="30" height="30"><polygon fill="#222" points="21,24.789 19.508,23.004 16.5,25.562 16.5,0 13.501,0 13.501,25.591 10.515,23.004 9,24.789 15.03,30 "/></svg>
 </a>
 </section>
@@ -131,7 +136,6 @@
 
 	
 	
-
 
   
 
@@ -201,12 +205,15 @@
 
 </div>
 
-    <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js'></script>
-    <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe-ui-default.min.js'></script>
+    <!-- <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js'></script>
+    <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe-ui-default.min.js'></script> -->
+
+    <script src="static/js/photoswipe/photoswipe.min.js"></script>
+    <script src="static/js/photoswipe/photoswipe-ui-default.min.js"></script>
+
     <script src="static/js/index.js"></script>
 
-    
-   <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter12645994 = new Ya.Metrika({ id:12645994, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/12645994" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter12645994 = new Ya.Metrika({ id:12645994, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/12645994" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 
 

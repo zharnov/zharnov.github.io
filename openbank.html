@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description"           content="Пётр Жарнов — графический дизайнер и арт-директор из Москвы. Я занимаюсь созданием дизайна сайтов, проектами по фирменному стилю и дизайном мобильных приложений.">
+    <meta name="description"           content="Пётр Жарнов — графический дизайнер из Москвы. Я занимаюсь созданием дизайна сайтов, проектами по фирменному стилю и дизайном мобильных приложений.">
     <meta name="viewport"              content="width=device-width,initial-scale=1">
 
 
@@ -28,10 +28,9 @@
     <meta name="twitter:image:src"   content="http://zharnov.ru/static/portfolio/openbank/cover.jpg" >
 
     <link rel="shortcut icon" href="static/favicons/favicon.png">
-
+    <link rel="shortcut icon" href="static/favicons/favicon.svg">
+    <link rel="mask-icon" href="static/favicons/zharnov-ru_icon.svg" color="#222222">
     <link rel="stylesheet" href="static/css/fonts.css"/>
-    <link href='https://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" href="static/css/style.css"/>
 
     <!-- Photoswipe -->
@@ -40,6 +39,9 @@
 
 </head>
 <body>
+
+
+
 	
 <menu class="">
   <section class="inner-navigation">
@@ -52,20 +54,21 @@
 </menu>
 
 
-
-  <div class="projects my-gallery narrow">
-
+    <main class="content">
 
 
-    <figure class="wide">
-      <a href="/static/portfolio/openbank/cover.jpg" data-size="1600x1000">
-      <img src="/static/portfolio/openbank/cover.jpg" class="hidden"></a>
-          <figcaption>
-          <p>Дизайн сервиса поддержки пользователя для интранета банка «Открытие». Ресурс предназначен для внутреннего пользования сотрудниками банка.</p>
-          </figcaption>
-    </figure>
+<section class="projects narrow">
+  <figure class="wide">
+    <figcaption>
+      <p>Ди­зайн сер­ви­са под­держ­ки поль­зо­ва­те­ля для ин­тра­не­та бан­ка «От­кры­тие». Ре­сурс пред­на­зна­чен для внут­рен­не­го поль­зо­ва­ния со­труд­ни­ка­ми бан­ка.</p>
+    </figcaption>
+  </figure>
+</section>
 
-    <figure class="wide">
+
+  <div class="projects my-gallery">
+
+    <figure class="full">
           <a href="/static/portfolio/openbank/01.jpg" data-size="1600x1000">
           <img src="/static/portfolio/openbank/01.jpg"></a>
     </figure>
@@ -104,7 +107,9 @@
   </div>
 
 
-  <section class="next-project">
+  </main>
+
+<section class="next-project next-footer" style= "background-image: url('/static/portfolio/instaphoto/cover.jpg');">
 <a href="instaphoto.html" alt="Next">
   <svg width="30" height="30"><polygon fill="#222" points="21,24.789 19.508,23.004 16.5,25.562 16.5,0 13.501,0 13.501,25.591 10.515,23.004 9,24.789 15.03,30 "/></svg>
 </a>
@@ -114,7 +119,6 @@
 
 	
 	
-
 
   
 
@@ -184,12 +188,15 @@
 
 </div>
 
-    <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js'></script>
-    <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe-ui-default.min.js'></script>
+    <!-- <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js'></script>
+    <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe-ui-default.min.js'></script> -->
+
+    <script src="static/js/photoswipe/photoswipe.min.js"></script>
+    <script src="static/js/photoswipe/photoswipe-ui-default.min.js"></script>
+
     <script src="static/js/index.js"></script>
 
-    
-   <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter12645994 = new Ya.Metrika({ id:12645994, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/12645994" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter12645994 = new Ya.Metrika({ id:12645994, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/12645994" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 
 

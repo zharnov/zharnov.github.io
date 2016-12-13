@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="favicon">
+            <circle id="o" fill="#FAFAFA" cx="8" cy="8" r="8"></circle>
+            <rect id="i" fill="#222222" x="4" y="5" width="2" height="6"></rect>
+            <rect id="i" fill="#222222" x="7" y="5" width="2" height="6"></rect>
+            <rect id="i" fill="#222222" x="10" y="5" width="2" height="6"></rect>
+        </g>
+    </g>
+</svg>
