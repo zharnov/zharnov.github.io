@@ -338,14 +338,6 @@ main {
 
 
 
-@media (max-width: 700px) {
-    .projects {
-        /*padding-left: 1rem;
-        padding-right: 1rem;*/
-    }
-}
-
-
 
 .next-project  {
     padding-top: 10vh;
@@ -354,7 +346,7 @@ main {
 
 .next-project a {
 
-    padding: 25vh;
+    padding: 10vh;
     padding-left: 100%;
     padding-right: 100%;
 }
@@ -363,7 +355,7 @@ main {
 
   .next-project a {
     opacity: 1;
-    padding-top: 5vh;
+    /*padding-top: 5vh;*/
   }
 
 }
@@ -374,6 +366,7 @@ main {
   font-family: 'EB Garamond', Georgia, serif;
   font-size: calc(14px + 0.2vw);
   line-height: 1.3em;
+  padding: 2em;
 }
 
 
@@ -611,13 +604,13 @@ figcaption.small p {
 }
 
 @media (max-width: 700px) {
-    .intro h2 {
+    h2 {
         font-size: calc(16px + 1vw);
     }
 }
 
 .photo {
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .circle {
@@ -647,6 +640,11 @@ figcaption.small p {
   .project-description::before {
     content: "";
   }
+.project-description,  a.project-description {
+  padding-bottom: 0rem;
+
+}
+
 }
 
 
@@ -920,8 +918,8 @@ figcaption.small p {
 }
 
 .social a {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #svg #icon, #svg #circle {
@@ -986,9 +984,17 @@ opacity: 1;
   padding-bottom: 5vh;
 }
 
+.pt2em {
+  padding-top: 5vh;
+}
+
 @media (max-width: 700px) {
     .pb2em {
         padding-bottom: 2vh;
+    }
+
+    .pt2em {
+      padding-top: 2vh;
     }
 }
 
@@ -1018,7 +1024,9 @@ a.underlined {
 
 @media (max-width: 500px) {
 	.content {
-		padding:4rem 0rem 3rem
+		/*padding:4rem 0rem 3rem;*/
+    margin-bottom:25vh;  /* edit */
+
 	}
 }
 
@@ -1033,9 +1041,6 @@ a.underlined {
 }
 
 .next-footer {
-/*
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);*/
 
   position: fixed;
   bottom: 0;
@@ -1054,8 +1059,18 @@ a.underlined {
   padding: 6rem;
   height: 50vh; /* edit */
 }
+
+
 @media (max-width: 500px) {
+
+  .content::after {
+  	bottom:-25vh;  /* edit */
+  	height:25vh;  /* edit */
+  }
+
 	.next-footer {
-		padding:2rem
+		padding:2rem;
+    background-image: none !important;
+    height: 25vh; /* edit */
 	}
 }
