@@ -144,18 +144,7 @@ img {
     margin: 0rem auto;
 }
 
-.narrow {
-    max-width: 120rem;
-}
 
-.wide {
-    max-width: 120rem;
-}
-
-.full {
-  max-width: 1600px;
-  padding-bottom: 4rem;
-}
 
 p {
     margin-right: auto;
@@ -224,6 +213,12 @@ a.nav-link:hover {
 a.project-link:hover, .social a:hover, figure a:hover {
     opacity: 1;
 }
+
+figure a:hover {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+
 
 html {
     font-size: 62.5%;
@@ -335,10 +330,21 @@ main {
     -ms-flex-align: start;
             align-items: flex-start;
 
-    max-width: 160rem;        
+    max-width: 160rem;
 }
 
+.narrow {
+    max-width: 120rem;
+}
 
+.wide {
+    max-width: 120rem;
+}
+
+.full {
+  max-width: 1600px;
+  padding-bottom: 4rem;
+}
 
 
 .next-project  {
@@ -427,9 +433,9 @@ article.half-portfolio, figure.half-portfolio {
 
 article.portfolio, figure.portfolio {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 30%;
-        -ms-flex: 1 1 30%;
-            flex: 1 1 30%;
+    -webkit-flex: 1 1 25%;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
     padding: 2rem;
 }
 
