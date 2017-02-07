@@ -37,6 +37,7 @@ section, summary, main {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 a {
@@ -238,6 +239,15 @@ body {
 
     position: relative;
     overflow: auto;
+
+    word-break: break-word;
+    -ms-word-break: break-all;
+
+    -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+
 }
 
 menu {
@@ -464,7 +474,7 @@ article.quarter, figure.quarter {
     }
 
 
-    article.quarter, figure.quarte {
+    article.quarter, figure.quarter {
         -webkit-box-flex: 1;
         -webkit-flex: 1 1 50%;
             -ms-flex: 1 1 50%;
