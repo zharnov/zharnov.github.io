@@ -647,7 +647,7 @@ figcaption.small p {
   /*color: #222;*/
   float: left;
   line-height: 1.4em;
-
+  display: none;
 }
 
 .project-description::before {
@@ -657,12 +657,11 @@ figcaption.small p {
 @media (max-width: 700px) {
   .project-description::before {
     content: "";
-  }
+    }
 .project-description,  a.project-description {
   padding-bottom: 0rem;
-
-}
-
+    display: initial;
+  }
 }
 
 
